@@ -1,6 +1,3 @@
-document.addEventListener("contextmenu", function (event) {
-  event.preventDefault();
-});
 
 document.getElementById("bold").addEventListener("click", function () {
   getElementsById("textarea", "fw-bold");
