@@ -12,17 +12,29 @@
       crossorigin="anonymous"
     />
     <style>
-        .u {
-            text-decoration: underline;
-        }
+      .u {
+        text-decoration: underline;
+      }
+      .text-area-hw{
+        height: 50vh;
+      }
+      .hw{
+        max-width: 120vh;
+      }
+      .textCase {
+        text-transform: uppercase;
+      }
+      .textCase2 {
+        text-transform: lowercase;
+      }
     </style>
   </head>
   <body class="bg-body-secondary">
-    <section class="d-flex flex-column align-items-center">
+    <section class="hw mx-auto d-flex flex-column align-items-center">
       <h1>Welcome to <span class="text-primary">Text Editor</span></h1>
 
       <div class="bg-white p-3">
-        <div class="row  row-cols-sm-2 row-cols-md-3">
+        <div class="row row-cols-sm-2 row-cols-md-3">
           <div>
             <button id="bold" class="btn fw-bold">B</button>
             <button id="italic" class="btn fst-italic">I</button>
@@ -34,20 +46,15 @@
             <button id="right-text" class="btn">R</button>
           </div>
           <div class="d-flex align-items-center">
-            <input type="number" name="" id="" class="w-25" />
-            <button class="btn fw-bold">aA</button>
-            <input type="color" name="" id="" />
+            <input type="number" name="" id="fontSize" class="w-25" />
+            <button id="text-case" class="btn fw-bold">A</button>
+            <button id="text-case2" class="btn fw-bold">a</button>
+            <input id="text-color" type="color" name="" id="" />
           </div>
-          
         </div>
         <div>
           <textarea
-            name=""
-            class="w-100"
-            id="textarea"
-            cols="30"
-            rows="10"
-          ></textarea>
+            name="" class="w-100 text-area-hw" id="textarea" cols="30" rows="10"></textarea>
         </div>
       </div>
     </section>

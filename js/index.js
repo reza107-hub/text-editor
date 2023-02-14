@@ -25,3 +25,19 @@ document.getElementById("center-text").addEventListener("click", function () {
 document.getElementById("right-text").addEventListener("click", function () {
   forTextAlign("textarea", "right");
 });
+
+document.getElementById('fontSize').addEventListener('input', function(){
+    document.getElementById('textarea').style.fontSize = parseFloat(document.getElementById('fontSize').value) + 'px';
+})
+
+document.getElementById('text-case').addEventListener('click', function(){
+    getElementsById('textarea', 'textCase')
+})
+
+document.getElementById('text-case2').addEventListener('click', function(){
+    getElementsById('textarea', 'textCase2')
+})
+
+document.getElementById('text-color').addEventListener('input', function(){
+    document.getElementById('textarea').style.color = this.value;
+})
